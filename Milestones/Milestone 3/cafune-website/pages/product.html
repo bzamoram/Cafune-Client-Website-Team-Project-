@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Top | Cafune</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">Cafune</div>
+        <ul class="nav-links">
+            <li><a href="allproducts.html">New Arrivals</a></li>
+            <li><a href="allproducts.html">Shop All</a></li>
+            <li><a href="#">Collections</a></li>
+        </ul>
+        <div class="btns">
+            <button class="btn">Log in</button>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="product-page">
+        <div class="product-gallery">
+            <img src="../images/crochettop.png" alt="Tank Top" class="main-image">
+            <div class="thumbnail-row">
+                <img src="../images/crochet.jpg" class="thumb">
+                <img src="../images/crochet2.jpg" class="thumb">
+                <img src="../images/crochet3.jpg" class="thumb active">
+            </div>
+        </div>
+
+        <div class="product-info">
+            <h2 class="product-title">Tank Top</h2>
+            <p class="product-price">$25.00 USD</p>
+            <div class="review">★★★★★ <span class="review-count">(0 Reviews)</span></div>
+
+            <div class="product-color">
+                <p>Color: White</p>
+                <div class="color-circle white"></div>
+            </div>
+
+            <div class="size-selector">
+                <p>Size</p>
+                <div class="sizes">
+                    <button class="size">XS</button>
+                    <button class="size active">S</button>
+                    <button class="size">M</button>
+                </div>
+            </div>
+
+            <button class="add-to-cart">Add to Cart</button>
+
+            <div class="wishlist"><a href="#">♡ Add to Wishlist</a></div>
+
+            <div class="description">
+                <h4>Description</h4>
+                <p>Model is 5’10 wearing size S<br>
+                Material: 85% Polyester 15% Spandex</p>
+            </div>
+
+            <div class="shipping">
+                <h4>Shipping</h4>
+                <p>Easy 14 Days Returns<br>Free shipping on orders over $200</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">Who We Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Customer Care</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Size Chart</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- CART POPUP -->
+<div id="cart-overlay" class="cart-overlay"></div>
+
+<div id="cart-sidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h3>CART (<span id="cart-count">0</span>)</h3>
+        <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+
+    <div class="cart-content">
+        <p id="free-shipping-msg">You are $200.00 USD away from free shipping.</p>
+        <div class="progress-bar"><div class="progress"></div></div>
+        <div id="cart-items"></div>
+    </div>
+
+    <div class="cart-footer">
+        <div class="subtotal">
+            <p>Subtotal</p>
+            <p id="cart-total">$0.00 USD</p>
+        </div>
+        <button class="checkout-btn">CHECK OUT</button>
+        <p class="checkout-note">Shipping, taxes, and discount codes are calculated at checkout</p>
+    </div>
+</div>
+
+<button id="cart-icon" class="cart-icon">🛍️</button>
+<script src="cart.js"></script>
+</body>
+</html>

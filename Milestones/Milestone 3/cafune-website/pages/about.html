@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cafune</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+      <div class="header-left">
+        <a href="index.html">
+            <img src="../images/logo.png" alt="Logo" style="height:34px;"/>
+        </a>    
+      </div>
+      <nav class="header-center">
+        <a href="shop.html">Shop All</a> |
+        <a href="collections.html">Collections</a> |
+        <a href="coming-soon.html">Coming Soon</a>
+      </nav>
+      <div class="header-right">
+        <a href="account.html" class="account-link" title="Account">
+          <span>&#128100;</span>
+        </a>
+        <button id="cart-btn" title="Cart" style="background:none; border:none; font-size:22px; cursor:pointer;">
+          &#128722;
+        </button>
+      </div>
+    </header>
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-content">
+        <button id="close-cart" class="close-cart">&times;</button>
+        <!-- Cart contents go here -->
+        <h2>Cart</h2>
+        <p>Here we'll have a list of items</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="about-text">
+        <h1>Giving college students the space for their business.</h1>
+        <p>Founded in 2025 by Elicia Powell, our crochet shop is dedicated to celebrating the beauty and creativity of handmade crafts. What started as a dorm-room project has grown into a brand recognized for warm designs, quality materials, and accessible products. Our mission? Create pieces that make people smile, last for years, and support makers everywhere.</p>
+        <p>We believe that handmade means more than craft—it’s about connection, care, and empowering others. As a team of friends (and students!), we work together to bring authentic, playful, and imaginative crochet products to our community.</p>
+        <p>Our promise stays the same: unique products, thoughtful design, and making every customer feel welcomed and special every day.</p>
+      </div>
+      <div class="about-image">
+        <img src="../images/offutt.jpeg" alt="TBD Pic">
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="about-sections">
+      <div class="about-section">
+        <div class="section-title">OUR JOURNEY</div>
+        <div class="section-content">It all began in Minneapolis, helping friends and classmates discover their love for handmade crafts...</div>
+      </div>
+      <div class="about-section">
+        <div class="section-title">OUR MISSION</div>
+        <div class="section-content">To spread warmth and joy through handmade crochet products.</div>
+      </div>
+    </div>
+
+<!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-columns">
+        <div class="footer-column">
+          <div class="footer-title">Quick Links</div>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <li><a href="#">TBD</a></li> -->
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">Customer Support</div>
+          <ul>
+            <li><a href="#">Size Chart</a></li>
+            <li><a href="#">TBD</a></li>
+            <li><a href="#">TBD</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">Socials</div>
+            <ul class="social-links">
+              <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="#"><i class="TBD"></i> TBD</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; Cafune 2025</div>
+        <div class="footer-locale">United States</div>
+      </div>
+    </footer>
+    <script>
+      const cartBtn = document.getElementById('cart-btn');
+      const cartSidebar = document.getElementById('cart-sidebar');
+      const closeCart = document.getElementById('close-cart');
+
+      cartBtn.onclick = function() { cartSidebar.classList.add('open'); }
+      closeCart.onclick = function() { cartSidebar.classList.remove('open'); }
+    </script>
+</body>
+</html>
